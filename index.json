@@ -1,7 +1,7 @@
 {
     "factions": {
         
-        "white_keep": {"name": "White Keep", "id": "white_keep", "url": "white_keep.json", "color": "#d4af37"}
+        "white_keep": {"name": "White Keep", "id": "white_keep", "url": "white_keep.json", "color": "#F5F5F5"}
     },
     "alliances": {},
     "categories": {
