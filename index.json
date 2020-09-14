@@ -64,7 +64,29 @@
         }
     },
     "weapons": {
+        "sword": {"name": "Sword", "attacks": 1, "short": "Melee", "ap": 1},
+        "spear": {"name": "Spear", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "phalanx", "x":1}]},
+        "impact": {"name": "Impact", "attacks": 1, "short": "Melee"}
     },
     "rules": {
+        "shield": {
+            "name": "Shield",
+            "hidden": true,
+            "description_short": "+1 Resist",
+            "description": "This model gets +1 Resist",
+            "effects": [{"type": "alterStat", "statName": "defense", "value": 1}]
+        },
+        "phalanx": {
+            "name": "Phalanx",
+            "inputs": ["x"],
+            "description": "This unit scores X automatic hits on a successful charge.",
+            "effects": [{"type": "freeAttacks", "weapon": "impact", "attacks": "x"}]
+        },
+        "impact": {
+            "name": "Impact",
+            "inputs": ["x"],
+            "description": "This unit scores X automatic hits on a successful charge.",
+            "effects": [{"type": "freeAttacks", "weapon": "impact", "attacks": "x"}]
+        }
     }
 }
