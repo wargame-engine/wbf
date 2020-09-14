@@ -80,13 +80,13 @@
             "name": "Phalanx",
             "inputs": ["x"],
             "description": "This unit scores X automatic hits on a successful charge.",
-            "effects": [{"type": "freeAttacks", "weapon": "impact", "attacks": "x"}]
+            "effects": [{"type": "freeAttacksWithWeapon", "weapon": "impact", "attacks": "x"}]
         },
         "impact": {
             "name": "Impact",
             "inputs": ["x"],
             "description": "This unit scores X automatic hits on a successful charge.",
-            "effects": [{"type": "freeAttacks", "weapon": "impact", "attacks": "x"}]
+            "effects": [{"type": "freeAttacksWithWeapon", "weapon": "impact", "attacks": "x"}]
         }
     }
 }
