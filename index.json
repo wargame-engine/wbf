@@ -80,7 +80,7 @@
             "name": "Phalanx",
             "inputs": ["x"],
             "description": "You may make one free attack with this weapon when charged.",
-            "effects": [{"type": "freeAttacksWithWeapon", "weapon": "impact", "attacks": "x", "frequency":5}]
+            "effects": [{"type": "freeAttacksWithWeapon", "weapon": "impact", "attacks": "x", "frequency":10}]
         },
         "impact": {
             "name": "Impact",
