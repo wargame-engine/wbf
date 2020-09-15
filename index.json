@@ -1,7 +1,8 @@
 {
     "factions": {
         
-        "white_keep": {"name": "White Keep", "id": "white_keep", "url": "white_keep.json", "color": "#F5F5F5", "secondary_color": "#2f3c48"}
+        "white_keep": {"name": "White Keep", "id": "white_keep", "url": "white_keep.json", "color": "#F5F5F5", "secondary_color": "#2f3c48"},
+        "wizard_tower": {"name": "Wizard Tower", "id": "wizard_tower", "url": "wizard_tower.json", "color": "#1a2226"}
     },
     "alliances": {},
     "categories": {
@@ -64,8 +65,13 @@
         }
     },
     "weapons": {
+        "unarmed": {"name": "Unarmed", "attacks": 1, "short": "Melee"},
         "sword": {"name": "Sword", "attacks": 1, "short": "Melee", "ap": 1},
         "spear": {"name": "Spear", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "phalanx", "x":1}]},
+        "pike": {"name": "Pike", "profiles": [
+            {"name": "Close", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["cumbersome", {"id": "phalanx", "x":1}]},
+            {"name": "Far", "attacks": 1, "short": "4", "ap": 1}
+        ]},
         "impact": {"name": "Impact", "attacks": 1, "short": "Melee"}
     },
     "rules": {
@@ -75,6 +81,11 @@
             "description_short": "+1 Resist",
             "description": "This model gets +1 Resist",
             "effects": [{"type": "alterStat", "statName": "defense", "value": 1}]
+        },
+        "cumbersome": {
+            "name": "Cumbersome",
+            "description": "This model hits at -1 Strength when engaged in Melee.",
+            "effects": [{"type": "alterStatWithWeapon", "statName": "fight", "value": 1}]
         },
         "phalanx": {
             "name": "Phalanx",

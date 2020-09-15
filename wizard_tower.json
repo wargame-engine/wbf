@@ -1,0 +1,49 @@
+{
+    "id": "wizard_tower",
+    "name": "Wizard Tower",
+    "units": {
+        "warriors": {
+            "name": "High Orc Warriors",
+            "description": "Specially bread and deadly warriors of the Wizard Tower.",
+            "min": 1,
+            "max": 1,
+            "rules": [
+                
+            ],
+            "keywords": [
+                "Infantry"
+            ],
+            "models": [
+                {
+                    "name": "High Orc",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["high_orc_sword"],
+                    "options": [
+                        {"addRule": "shield"},
+                        {"replaceWeapon": "high_orc_sword", "withWeapon": "high_orc_pike"}
+                    ],
+                    "rules": [],
+                    "min": 5,
+                    "max": 10
+                }
+            ]
+        }
+    },
+    "weapons": {
+        "high_orc_sword": {"name": "High Orc Sword", "attacks": 1, "short": "Melee", "ap": 2},
+        "high_orc_pike": {"name": "High Orc Pike", "profiles": [
+            {"name": "Close", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["cumbersome", {"id": "phalanx", "x":1}]},
+            {"name": "Far", "attacks": 1, "short": "3", "ap": 2}
+        ]}
+    },
+    "rules": {
+        
+    },
+    "relics": []
+}
