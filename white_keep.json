@@ -33,6 +33,37 @@
                     "max": 10
                 }
             ]
+        },
+        "wardens": {
+            "name": "Warden",
+            "description": "Wardens of the White Keep",
+            "min": 1,
+            "max": 1,
+            "rules": [
+
+            ],
+            "keywords": [
+                "Infantry"
+            ],
+            "models": [
+                {
+                    "name":"Warden",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "wounds": 1,
+                    "weapons": ["sword"],
+                    "options": [
+                        {"replaceWeapon": "sword", "withWeapon":"spear"}
+                    ],
+                    "rules": [],
+                    "min": 5,
+                    "max": 10
+                }
+            ]
         }
     },
     "weapons": {
