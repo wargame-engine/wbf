@@ -55,7 +55,7 @@
                     "defense": 6,
                     "reflexes": 6,
                     "wounds": 1,
-                    "weapons": ["sword"],
+                    "weapons": ["sword", "bow"],
                     "options": [
                         {"replaceWeapon": "sword", "withWeapon":"spear"}
                     ],

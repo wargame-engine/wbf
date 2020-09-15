@@ -73,6 +73,7 @@
             {"name": "Far", "attacks": 1, "short": "4", "ap": 1}
         ]},
         "crossbow": {"name": "Crossbow", "attacks": 1, "short": 12, "medium": 24, "ap": 2},
+        "bow": {"name": "Bow", "attacks": 1, "short": 12, "medium": 24, "ap": 1},
         "impact": {"name": "Impact", "attacks": 1, "short": "Melee"}
     },
     "rules": {
