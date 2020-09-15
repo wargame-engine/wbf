@@ -72,6 +72,7 @@
             {"name": "Close", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["cumbersome", {"id": "phalanx", "x":1}]},
             {"name": "Far", "attacks": 1, "short": "4", "ap": 1}
         ]},
+        "crossbow": {"name": "Crossbow", "attacks": 1, "short": 12, "medium": 24, "ap": 2},
         "impact": {"name": "Impact", "attacks": 1, "short": "Melee"}
     },
     "rules": {

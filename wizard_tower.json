@@ -26,7 +26,8 @@
                     "weapons": ["high_orc_sword"],
                     "options": [
                         {"addRule": "shield"},
-                        {"replaceWeapon": "high_orc_sword", "withWeapon": "high_orc_pike"}
+                        {"replaceWeapon": "high_orc_sword", "withWeapon": ["high_orc_pike"]},
+                        {"addWeapon": "crossbow"}
                     ],
                     "rules": [],
                     "min": 5,
