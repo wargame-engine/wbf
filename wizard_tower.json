@@ -38,10 +38,12 @@
     },
     "weapons": {
         "high_orc_sword": {"name": "High Orc Sword", "attacks": 1, "short": "Melee", "ap": 2},
-        "high_orc_pike": {"name": "High Orc Pike", "profiles": [
-            {"name": "Close", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["cumbersome", {"id": "phalanx", "x":1}]},
-            {"name": "Far", "attacks": 1, "short": "3", "ap": 2}
-        ]}
+        "high_orc_pike": {
+            "name": "High Orc Pike",
+            "profiles": [
+             {"name": "Close", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["cumbersome"]}, 
+             {"name": "Far", "attacks": 1, "short": "Melee", "ap": 2, "rules": [{"id": "phalanx", "x": 2}]}]       
+        }
     },
     "rules": {
         
