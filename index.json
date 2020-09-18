@@ -84,8 +84,8 @@
         "impact": {
             "name": "Impact",
             "inputs": ["x"],
-            "description": "This unit scores X automatic hits on a successful charge.",
-            "effects": [{"type": "freeAttacksWithWeapon", "weapon": "impact", "attacks": "x"}]
+            "description": "When this model successfully charges an enemy unit, make X Strength tests. For each success, the enemy takes 1 hit with no AP.",
+            "effects": [{"type": "freeAttacks", "weapon": "impact", "attacks": "x"}]
         },
         "banner": {
             "name": "Banner",
