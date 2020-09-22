@@ -47,16 +47,6 @@
         }
     },
     "weapons": {
-        "unarmed": {"name": "Unarmed", "attacks": 1, "short": "Melee"},
-        "sword": {"name": "Sword", "attacks": 1, "short": "Melee", "ap": 1},
-        "spear": {"name": "Spear", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "phalanx", "x": 1}, {"id": "reach", "x": 2}]},
-        "pike": { "name": "Pike", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "phalanx", "x": 1}, "cumbersome", {"id": "reach", "x": 4}]},
-        "crossbow": {"name": "Crossbow", "attacks": 1, "short": 12, "medium": 24, "ap": 2},
-        "bow": {"name": "Bow", "attacks": 1, "short": 12, "medium": 24, "ap": 1},
-        "longbow": {"name": "Long Bow", "attacks": 1, "short": 15, "medium": 30, "ap": 1, "rules": ["indirect"]},
-        "lance": {"name": "Lance", "attacks": 1, "short": "Melee", "rules": [{"id": "impact", "x": 1}], "ap": 2},
-        "impact": {"name": "Impact", "attacks": 1, "short": "Melee"},
-        "longsword": {"name": "Longsword", "attacks": 1, "short": "Melee", "ap": 1, "damage": 2},
         "heirloom_sword": {"name": "Heirloom Sword", "attacks": 3, "short": "Melee", "ap": 3, "damage": 2}
     },
     "rules": {
@@ -65,35 +55,20 @@
             "hidden": true,
             "description_short": "+1 Resist",
             "description": "This model gets +1 Resist",
-            "effects": [{"type": "alterStat", "statName": "defense", "value": 1}]
+            "points": [2, {"multiply": "model.wounds"}]
         },
         "light_armor": {
             "name": "Light Armor",
             "hidden": true,
             "description_short": "+1 Resist",
             "description": "This model gets +1 Resist",
-            "effects": [{"type": "alterStat", "statName": "defense", "value": 1}]
-        },
-        "cumbersome": {"name": "Cumbersome", "description": "This model hits with this weapon at -1 Strength when fighting in engagement range.", "effects": [{"type": "alterStatWithWeapon", "statName": "fight", "value": -1}]},
-        "phalanx": {
-            "name": "Phalanx",
-            "inputs": ["x"],
-            "description": "You may make one free attack with this weapon when a unit moves into your engagement range.",
-            "effects": [{"type": "freeAttacksWithWeapon", "weapon": "impact", "attacks": "x", "frequency": 10}]
-        },
-        "impact": {
-            "name": "Impact",
-            "inputs": ["x"],
-            "description": "When this model successfully charges an enemy unit, make X Strength tests. For each success, the enemy takes 1 hit with no AP.",
-            "effects": [{"type": "freeAttacks", "weapon": "impact", "attacks": "x"}]
+            "points": [2, {"multiply": "model.wounds"}]
         },
         "banner": {
             "name": "Banner",
             "description": "This model and friendly Infantry units within 3\" reroll failed Strength tests of 9+.",
             "effects": [{"frequency": 5, "type": "alterStat", "statName": "fight", "value": 1, "target": "friendly", "filter": {"keywords": ["Infantry"]}}]
         },
-        "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy."},
-        "fate": {"name": "Fate", "inputs": ["x"], "description": "This model may re-roll X Resist tests per attack.", "effects": [{"type": "invulnerable", "value": "x"}]},
         "character": {
             "name": "Character",
             "description": "When this unit is activated, it may immediately activate another unit within 6\" (including another Character). If it is an Infantry unit it may not be targeted while another friendly non-character Infantry unit is within 3\". Friendly units within 3\" may use this model's Courage value."
@@ -124,14 +99,6 @@
             "description": "When this unit is activated, choose a friendly Infantry unit within 6\" to receive one of the following bonuses: Re-roll failed Accuracy tests of 9+ or +1 AP or +3\" Movement or Re-roll failed Strength tests of 9+. A unit may only benefit from one Field Order.",
             "effects": [
                 {"type": "alterStat", "statName": "shoot", "value": 1, "frequency": 5, "target": "friendly", "range": 6, "filter": {"keywords": ["Infantry"]}}
-            ]
-        },
-        "reach": {
-            "name": "Reach",
-            "inputs": ["x"],
-            "description": "This weapon may engage and fight models up to X\" away. Enemy models must still move into base contact unless they also have reach.",
-            "effects": [
-                {"type": "alterStat", "statName": "movement", "value": "x", "frequency": 5}
             ]
         },
         "furious": {
