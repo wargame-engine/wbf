@@ -9,7 +9,7 @@
             "min": 1,
             "max": 1,
             "rules": [
-                {"id": "lucky", "x": 2}
+                {"id": "lucky", "x": 2}, {"id": "tough", "x":1}
             ],
             "keywords": [
                 "Infantry"
@@ -27,7 +27,7 @@
                     "weapons": ["heirloom_sword"],
                     "options": [
                     ],
-                    "rules": ["character", "banner", {"id": "impact", "x": 1}],
+                    "rules": ["leader", "banner", {"id": "impact", "x": 1}],
                     "min": 1,
                     "max": 1
                 }
@@ -57,7 +57,7 @@
                         {"replaceWeapon": {"id": "bow", "count": 2}, "withWeapon": [{"id": "longbow", "count": 2}]},
                         {"addRule": "scout"}
                     ],
-                    "rules": ["character", "agile", {"id": "lucky", "x": 1}],
+                    "rules": ["leader", "agile", {"id": "lucky", "x": 1}, {"id": "tough", "x":1}],
                     "min": 1,
                     "max": 1
                 }
@@ -90,7 +90,7 @@
                         {"replaceWeapon": {"id": "sword", "count": 3}, "withWeapon": [{"id": "longsword", "count": 3}]},
                         {"addWeapon": "bow"}
                     ],
-                    "rules": ["character", {"id": "lucky", "x": 1}],
+                    "rules": ["leader", {"id": "lucky", "x": 1}, {"id": "tough", "x":1}],
                     "min": 1,
                     "max": 1
                 }
@@ -223,7 +223,9 @@
                     "options": [
                         {"addRule":"banner"}
                     ],
-                    "rules": [],
+                    "rules": [
+                        {"id": "tough",  "x":1}
+                    ],
                     "min": 3,
                     "max": 6
                 }
@@ -340,7 +342,7 @@
     "strategies": {
         "for_the_white_keep": {
             "name": "For The White Keep",
-            "flavor": "definitely not minas tirith",
+            "flavor": "flavor text",
             "description": "Re-roll a single skill test die. It may not be re-rolled again.",
             "cost": 1
         }
