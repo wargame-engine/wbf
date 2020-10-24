@@ -1,0 +1,167 @@
+{
+    "id": "doom_mountain",
+    "name": "Doom Mountain",
+    "units": {
+        "white_wizard": {
+            "name": "The White Wizard",
+            "description": "A powerful wizard.",
+            "min": 1,
+            "max": 1,
+            "category": "hero",
+            "keywords": [
+                "Infantry"
+            ],
+            "models": [
+                {
+                    "name": "White Wizard",
+                    "courage": 8,
+                    "movement": 6,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "wounds": 3,
+                    "weapons": [{"id": "wizard_staff", "count": 3}],
+                    "rules": [{"id": "lucky", "x": 2}, {"id": "magic", "x": 1}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "high_orc_captain": {
+            "name": "High Orc Captain",
+            "description": "A captain of the High Orcs.",
+            "min": 1,
+            "max": 1,
+            "category": "hero",
+            "keywords": [
+                "Infantry"
+            ],
+            "models": [
+                {
+                    "name": "High Orc Captain",
+                    "courage": 6,
+                    "movement": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "wounds": 3,
+                    "weapons": [{"id": "high_orc_sword", "count": 3}],
+                    "options": [
+                        {"addRule": "shield"},
+                        {"replaceWeapon": {"id": "high_orc_sword", "count": 3}, "withWeapon": [{"id": "dual_high_orc_swords", "count": 3}]},
+                        {"addWeapon": "crossbow"}
+                    ],
+                    "rules": [{"id": "lucky", "x": 1}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "hunters": {
+            "name": "High Orc Hunters",
+            "description": "The most Elite High Orcs.",
+            "min": 1,
+            "max": 1,
+            "category": "infantry",
+            "keywords": [
+                "Infantry"
+            ],
+            "models": [
+                {
+                    "name": "High Orc Hunter",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["high_orc_sword"],
+                    "options": [
+                        {"addRule": "shield"},
+                        {"replaceWeapon": "high_orc_sword", "withWeapon": ["high_orc_pike"]}
+                    ],
+                    "rules": [],
+                    "min": 5,
+                    "max": 10
+                }
+            ]
+        },
+        "warriors": {
+            "name": "High Orc Warriors",
+            "description": "Specially bread and deadly warriors of the Wizard Tower.",
+            "min": 1,
+            "max": 1,
+            "category": "infantry",
+            "keywords": [
+                "Infantry"
+            ],
+            "models": [
+                {
+                    "name": "High Orc Warrior",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["high_orc_sword"],
+                    "options": [
+                        {"addRule": "shield"},
+                        {"replaceWeapon": "high_orc_sword", "withWeapon": ["high_orc_pike"]},
+                        {"addWeapon": "crossbow"}
+                    ],
+                    "rules": [],
+                    "min": 5,
+                    "max": 10
+                }
+            ]
+        },
+        "scouts": {
+            "name": "High Orc Scouts",
+            "description": "Specially bread and deadly warriors of the Wizard Tower.",
+            "min": 1,
+            "max": 1,
+            "category": "infantry",
+            "keywords": [
+                "Infantry"
+            ],
+            "options": [
+                {"addRule": "scout", "modelLimit": "all"},
+                {"addRule": "tracker", "modelLimit": "all"}
+            ],
+            "models": [
+                {
+                    "name": "High Orc Scout",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["high_orc_sword"],
+                    "options": [
+                        {"addRule": "shield"},
+                        {"addWeapon": "bow"}
+                    ],
+                    "rules": [],
+                    "min": 5,
+                    "max": 10
+                }
+            ]
+        }
+    },
+    "weapons": {
+        "high_orc_sword": {"name": "High Orc Sword", "attacks": 1, "short": "Melee", "ap": 2},
+        "dual_high_orc_swords": {"name": "Dual High Orc Swords", "attacks": 2, "short": "Melee", "ap": 2},
+        "high_orc_pike": { "name": "Pike", "attacks": 1, "short": "Melee", "ap": 2, "rules": [{"id": "phalanx", "x": 1}, "cumbersome", {"id": "reach", "x": 4}]}
+    },
+    "rules": {
+        "tracker": {"name": "Trackers", "description":"", "description_short": "+1\" Movement", "points": ["model.wounds"]}
+    },
+    "relics": []
+}

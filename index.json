@@ -1,7 +1,10 @@
 {
     "factions": {
         "white_keep": {"name": "White Keep", "id": "white_keep", "url": "white_keep.json", "color": "#F5F5F5", "secondary_color": "#2f3c48", "alliance": "good"},
-        "wizard_tower": {"name": "Wizard Tower", "id": "wizard_tower", "url": "wizard_tower.json", "color": "#1a2226", "alliance": "evil"}
+        "deep_wood_elves": {"name": "Deep Wood Elves", "id": "deep_wood_elves", "url": "deep_wood_elves.json", "color": "#2d5712", "alliance": "good"},
+        "horse_lords": {"name": "Horse Lords", "id": "horse_lords", "url": "horse_lords.json", "color": "#4e5247", "alliance": "good"},
+        "wizard_tower": {"name": "Wizard Tower", "id": "wizard_tower", "url": "wizard_tower.json", "color": "#1a2226", "alliance": "evil"},
+        "doom_mountain": {"name": "Doom Mountain", "id": "doom_mountain", "url": "doom_mountain.json", "color": "#b1442a", "alliance": "evil"}
     },
     "alliances": {"good": {"name": "Forces of Good"}, "evil": {"name": "Forces of Evil"}},
     "categories": {
