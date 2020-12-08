@@ -11,18 +11,18 @@
             "keywords": [
                 "Infantry"
             ],
+            "rules": [{"id": "tough", "x": 2}, {"id": "magic", "x": 2}, {"id": "wounds", "x": 3}],
             "models": [
                 {
-                    "name": "White Wizard",
+                    "name": "The White Wizard",
                     "courage": 8,
                     "movement": 6,
                     "shoot": 7,
                     "fight": 7,
-                    "defense": 5,
+                    "defense": 7,
                     "reflexes": 6,
                     "wounds": 3,
                     "weapons": [{"id": "wizard_staff", "count": 3}],
-                    "rules": [{"id": "lucky", "x": 2}, {"id": "magic", "x": 1}],
                     "min": 1,
                     "max": 1
                 }
@@ -37,6 +37,7 @@
             "keywords": [
                 "Infantry"
             ],
+            "rules": [{"id": "tough", "x": 1}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "High Orc Captain",
@@ -53,7 +54,7 @@
                         {"replaceWeapon": {"id": "high_orc_sword", "count": 3}, "withWeapon": [{"id": "dual_high_orc_swords", "count": 3}]},
                         {"addWeapon": "crossbow"}
                     ],
-                    "rules": [{"id": "lucky", "x": 1}],
+                    
                     "min": 1,
                     "max": 1
                 }
@@ -158,7 +159,7 @@
     "weapons": {
         "high_orc_sword": {"name": "High Orc Sword", "attacks": 1, "short": "Melee", "ap": 2},
         "dual_high_orc_swords": {"name": "Dual High Orc Swords", "attacks": 2, "short": "Melee", "ap": 2},
-        "high_orc_pike": { "name": "Pike", "attacks": 1, "short": "Melee", "ap": 2, "rules": [{"id": "phalanx", "x": 1}, "cumbersome", {"id": "reach", "x": 4}]}
+        "high_orc_pike": { "name": "High Orc Pike", "attacks": 1, "short": "Melee", "ap": 2, "rules": [{"id": "phalanx", "x": 1}, "cumbersome", {"id": "reach", "x": 4}]}
     },
     "rules": {
         "tracker": {"name": "Trackers", "description":"", "description_short": "+1\" Movement", "points": ["model.wounds"]}

@@ -1,0 +1,44 @@
+{
+    "id": "ring_company",
+    "name": "Ring Company",
+    "units": {
+        "white_wizard": {
+            "name": "The Grey Wizard",
+            "description": "A powerful wizard.",
+            "min": 1,
+            "max": 1,
+            "category": "hero",
+            "keywords": [
+                "Infantry"
+            ],
+            "models": [
+                {
+                    "name": "The Grey Wizard",
+                    "courage": 8,
+                    "movement": 6,
+                    "shoot": 7,
+                    "fight": 7,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "wounds": 3,
+                    "weapons": [{"id": "wizard_staff", "count": 3}],
+                    "rules": [{"id": "tough", "x": 2}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+                    "options": [
+                        {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2, "name": "Reborn"}}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        }
+    },
+    "weapons": {
+       
+    },  
+    "rules": {
+        
+    },
+    "relics": [],
+    "strategies": {
+    }
+}

@@ -3,8 +3,8 @@
     "name": "Doom Mountain",
     "units": {
         "white_wizard": {
-            "name": "The White Wizard",
-            "description": "A powerful wizard.",
+            "name": "The Dark Lord",
+            "description": "A powerful evil wizard.",
             "min": 1,
             "max": 1,
             "category": "hero",
@@ -22,7 +22,7 @@
                     "reflexes": 6,
                     "wounds": 3,
                     "weapons": [{"id": "wizard_staff", "count": 3}],
-                    "rules": [{"id": "lucky", "x": 2}, {"id": "magic", "x": 1}],
+                    "rules": [{"id": "tough", "x": 2}, {"id": "magic", "x": 2}],
                     "min": 1,
                     "max": 1
                 }
@@ -53,7 +53,7 @@
                         {"replaceWeapon": {"id": "high_orc_sword", "count": 3}, "withWeapon": [{"id": "dual_high_orc_swords", "count": 3}]},
                         {"addWeapon": "crossbow"}
                     ],
-                    "rules": [{"id": "lucky", "x": 1}],
+                    "rules": [{"id": "tough", "x": 1}],
                     "min": 1,
                     "max": 1
                 }
