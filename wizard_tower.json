@@ -14,7 +14,7 @@
             "rules": [{"id": "tough", "x": 2}, {"id": "magic", "x": 2}, {"id": "wounds", "x": 3}],
             "models": [
                 {
-                    "name": "The White Wizard",
+                    "name": "The White Wizard TM",
                     "courage": 8,
                     "movement": 6,
                     "shoot": 7,
@@ -152,6 +152,37 @@
                     "rules": [],
                     "min": 5,
                     "max": 10
+                }
+            ]
+        },
+        "armored_troll": {
+            "name": "Armored Troll",
+            "description": "Specially bread and deadly warriors of the Wizard Tower.",
+            "min": 1,
+            "max": 1,
+            "category": "large",
+            "keywords": [
+                "Monster"
+            ],
+            "rules": [
+                {"id": "wounds", "x": 3}
+            ],
+            "options": [
+                {"addRule": "shield"}
+            ],
+            "models": [
+                {
+                    "name": "Armored Troll",
+                    "courage": 6,
+                    "movement": 6,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 9,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["troll_sword", "huge_rock"],
+                    "min": 1,
+                    "max": 1
                 }
             ]
         }
