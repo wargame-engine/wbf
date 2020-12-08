@@ -109,7 +109,7 @@
             ],
             "models": [
                 {
-                    "name": "Swordman",
+                    "name": "Warrior",
                     "courage": 5,
                     "movement": 6,
                     "shoot": 5,
@@ -220,7 +220,7 @@
                     "wounds": 2,
                     "weapons": ["spear"],
                     "options": [
-                        {"addRule":"banner"}
+                        {"addRule": ["banner"], "modelLimit": 1}
                     ],
                     "min": 3,
                     "max": 6
@@ -233,9 +233,7 @@
             "category": "cavalry",
             "min": 1,
             "max": 1,
-            "rules": [
-
-            ],
+            "rules": [{"id": "impact", "x":1}, {"id": "wounds", "x": 2}],
             "keywords": [
                 "Cavalry"
             ],
@@ -243,18 +241,19 @@
                 {
                     "name":"Knight",
                     "courage": 6,
-                    "movement": 9,
+                    "movement": 8,
                     "shoot": 5,
                     "fight": 6,
-                    "defense": 8,
+                    "defense": 7,
                     "reflexes": 5,
                     "wounds": 2,
                     "weapons": ["sword"],
                     "options": [
                         {"replaceWeapon": "sword", "withWeapon": "lance"},
-                        {"addRule": ["banner", "shield"]}
+                        {"addRule": ["shield"]},
+                        {"addRule": ["banner"], "modelLimit": 1}
                     ],
-                    "rules": [{"id": "impact", "x":1}],
+                    
                     "min": 3,
                     "max": 6
                 }
@@ -285,7 +284,8 @@
                     "weapons": ["sword"],
                     "options": [
                         {"replaceWeapon": "sword", "withWeapon": ["spear", "bow"]},
-                        {"addRule": ["shield"]}
+                        {"addRule": ["shield"]},
+                        {"addRule": ["banner"], "modelLimit": 1}
                     ],
                     "rules": [],
                     "min": 5,
@@ -307,7 +307,7 @@
             ],
             "models": [
                 {
-                    "name": "Levy Swordsman",
+                    "name": "Levy Warrior",
                     "courage": 5,
                     "movement": 6,
                     "shoot": 4,

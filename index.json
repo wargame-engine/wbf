@@ -12,9 +12,10 @@
     "alliances": {"good": {"name": "Forces of Good"}, "evil": {"name": "Forces of Evil"}},
     "categories": {
         "hero": {"name": "Heroes"},
-        "cavalry": {"name": "Cavalry"},
         "infantry": {"name": "Infantry"},
-        "large": {"name": "Large"}
+        "cavalry": {"name": "Cavalry"},
+        "large": {"name": "Large"},
+        "siege": {"name": "Siege"}
     },
     "organizations": {
         "skirmish": {
@@ -37,19 +38,19 @@
             "hidden": true,
             "description_short": "+1 Save",
             "description": "This model gets +1 Save",
-            "points": [2]
+            "points": 2
         },
         "light_armor": {
             "name": "Light Armor",
             "hidden": true,
             "description_short": "+1 Save",
             "description": "This model gets +1 Save",
-            "points": [2]
+            "points": 2
         },
         "banner": {
             "name": "Banner",
-            "description": "This model and friendly Infantry units within 3\" reroll failed Strength tests of 9+.",
-            "points": [15]
+            "description": "This model and friendly Infantry units within 6\" re-roll failed Strength tests of 9+.",
+            "points": 15
         }
     }
 }
