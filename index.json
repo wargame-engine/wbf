@@ -18,14 +18,36 @@
         "siege": {"name": "Siege"}
     },
     "organizations": {
-        "skirmish": {
-            "name": "Battle (Core)",
+        "battle": {
+            "name": "Patrol (Core)",
+            "cost": 1,
+            "description": "A well-rounded force for taking on any mission.",
+            "categories": {
+                "hero": {"max": 1},
+                "infantry": {"min": 2, "max": 4},
+                "cavalry": {"max": 2},
+                "large": {"max": 1}
+            }
+        },
+        "army": {
+            "name": "Army (Core)",
             "cost": 2,
             "description": "A well-rounded force for taking on any mission.",
             "categories": {
                 "hero": {"max": 2},
-                "infantry": {"min": 2, "max": 4},
-                "core": {"min": 2, "max": 4}
+                "infantry": {"min": 2, "max": 6},
+                "cavalry": {"max": 3},
+                "large": {"max": 2},
+                "siege": {"max": 1}
+            }
+        },
+        "Team": {
+            "name": "Team (Core)",
+            "cost": 2,
+            "description": "A specialized team of heroes.",
+            "categories": {
+                "hero": {"min": 2, "max": 6}
+            }
         }
     },
     "relics": [],
